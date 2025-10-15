@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # Initialize OpenAI client
 client = OpenAI(
-    api_key="Your API " #inster your api here
+    api_key="Your API " #insert your api here
 )
 
 def is_last_message_from_sender(chat_log, sender_name="Sohu"):
@@ -14,16 +14,14 @@ def is_last_message_from_sender(chat_log, sender_name="Sohu"):
     if sender_name in messages:
         return True 
     return False
-    
-    
 
 # Step 1: Click to open the app (e.g., WhatsApp or Chrome)
 pyautogui.moveTo(1125, 1062, duration=0.5)
 pyautogui.click()
-time.sleep(5)  # Let the app load
+time.sleep(5)  #Let the app load
 
 while True:
-    time.sleep(5)  # Wait before checking again
+    time.sleep(5)  #Wait before checking again
 
     # Step 2: Select text by dragging from top-left to bottom-right of chat area
     pyautogui.moveTo(436, 90, duration=0.5)
