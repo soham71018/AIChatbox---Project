@@ -15,9 +15,9 @@ def is_last_message_from_sender(chat_log, sender_name="Sohu"):
         return True 
     return False
 
-# Step 1: Click to open the app (e.g., WhatsApp or Chrome)
+# Step 1: Click to open the app (e.g., Youtube or Chrome)
 pyautogui.moveTo(1125, 1062, duration=0.5)
-pyautogui.click()
+pyautogui.click() 
 time.sleep(5)  #Let the app load
 
 while True:
@@ -49,7 +49,7 @@ while True:
                 {"role": "system", "content": "You are a person named Naruto who speaks Hindi and English. You are from India and you're a coder. You analyze chat history and roast people in a funny way. Output should be the next chat response (text message only)."},
                 {"role": "system", "content": "Do not start like this [21:02, 12/6/2024] Sohu: "},
                 {"role": "user", "content": chat_history}
-            ]
+                ]
         )
 
         response = completion.choices[0].message.content
