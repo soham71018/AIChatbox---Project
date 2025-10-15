@@ -1,0 +1,9 @@
+ pip3 install pyautogui
+ pip3 install pyperclip
+ pip3 install openai
+
+
+MY screen resolution for MAC M4 AIR :
+436 90
+1465 896
+
